@@ -1,18 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/celular"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="@color/corFundo">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bandio"
+        android:textAlignment="center"
+        android:textSize="55sp"
+        android:layout_marginTop="120sp"
+        android:textColor="#fff"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="27sp"
+        android:layout_marginTop="130sp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="      Username"
+            android:textColorHint="#fff"
+            android:backgroundTint="#fff"
+            android:drawableStart="@drawable/person"
+            android:drawableLeft="@drawable/person"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="      Password"
+            android:textColorHint="#fff"
+            android:backgroundTint="#fff"
+            android:drawableStart="@drawable/key"
+            android:drawableLeft="@drawable/key"
+            android:textSize="20sp"
+            android:layout_marginTop="25sp"
+            android:drawableEnd="@drawable/questionMark"
+            android:drawableTint="#fff"
+            android:layout_marginBottom="30sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:paddingTop="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondo"
+        android:layout_margin="10sp"
+        android:drawableTop="@drawable/exit"/>
+    
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Don't have a account? Sing UP"
+        android:layout_marginLeft="100sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
